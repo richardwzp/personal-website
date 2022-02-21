@@ -12,7 +12,8 @@ color: #fff
 }
 .nav-title {
     display: flex;
-    flex-direction: row
+    flex-direction: row;
+    align-items: center
 }
 .title-sub {
    flex-wrap: wrap

@@ -5,7 +5,7 @@ function Title() {
     const titleElement = (
 	<div className="Title"> 
 		<div className="nav-title">
-			<img className="title-img" src="logo192.png" alt="not meaningful"/>
+			<img className="title-img" src="kitty.gif" alt="not meaningful"/>
 			<h1> Richard{"'"}s website </ h1>	
 		</ div>
 		<div className="link-tabs"> 
