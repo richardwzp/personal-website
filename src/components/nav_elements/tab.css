@@ -1,0 +1,38 @@
+
+
+.nav-element {
+    float: left;
+    margin: 0.5em 1em;
+    margin-top: 0px;
+    background: linear-gradient(to right, #ff7575, #f8a8ff);
+    border-left: 4px solid;
+/*    border-image: linear-gradient(to bottom right, #fff, #ff1717) 1;*/
+    border-color: rgba(248, 168, 255, 30);
+    border-bottom-right-radius: 1em 1em;
+    background-clip: content-box, border-box;
+    transition: all 0.35s ease-in-out;
+
+}
+
+.priv-nav-link {
+    text-decoration: none;
+    color: white ;
+    font-size: 110%;
+    line-height: 17px;
+    height: 35px;
+    width: 80px;
+    text-align: center;
+    transition: all 0.35s ease-in-out;
+}
+.nav-element:hover {
+    transform: scale(1.2) perspective(1px);
+    transition:transform 0.35s 
+}
+.priv-nav-link:hover {
+    transform: scale(1.2) perspective(1px);
+    transition:transform 0.35s;
+    color: black 
+}
+.priv-nav-link:focus {
+    color: white;
+}

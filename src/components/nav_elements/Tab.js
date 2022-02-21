@@ -1,13 +1,16 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom';
-class Tab{
-
+import './tab.css';
+class Tab extends React.Component {
 
     render() {
 	return (
-	    <li className="nav-item">
-	      <NavLink className="nav-link" to={this.props.destination_link}/>
+	    <li className="nav-element">
+	      <NavLink 
+		className={"nav-link priv-nav-link " + this.props.destination_name} 
+		to={this.props.destination_link}>
 	       {this.props.destination_name}
+	      </NavLink>
 	    </ li>);
     }
 }

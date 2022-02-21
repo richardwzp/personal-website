@@ -1,23 +1,23 @@
 import React from 'react'
-import "./title.css"
+import "./navbar.css"
 import { NavLink } from 'react-router-dom'
-function Title() {
+import Tab from './Tab';
+
+function Navbar() {
     const titleElement = (
 	<div className="Title"> 
 		<div className="nav-title">
 			<img className="title-img" src="kitty.gif" alt="not meaningful"/>
 			<h1> Richard{"'"}s website </ h1>	
 		</ div>
-		<div className="link-tabs"> 
-		   <NavLink className="nav-link" to="/">
-		    home
-		   </NavLink>
-		   <NavLink className="nav-link" to="/tree">
-			tree
-		    </NavLink>	
-		    </div>
+		<div className="navbar-jump"> 
+		 <ul>
+		   <Tab destination_link="/" destination_name="home" />
+		   <Tab destination_link="/tree" destination_name="tree" />
+		   <NavLink className="nav-link" to="/tree" />			     </ul> 
+	</div>
 	</div>)
     
     return titleElement
 }
-export default Title;
+export default Navbar;
