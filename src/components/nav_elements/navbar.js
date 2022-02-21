@@ -8,7 +8,7 @@ function Navbar() {
 	<div className="Title"> 
 		<div className="nav-title">
 			<img className="title-img" src="kitty.gif" alt="not meaningful"/>
-			<h1> Richard{"'"}s website </ h1>	
+			<h2> Richard{"'"}s website </ h2>	
 		</ div>
 		<div className="navbar-jump"> 
 		 <ul>

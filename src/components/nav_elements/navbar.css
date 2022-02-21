@@ -5,15 +5,16 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: baseline;
-padding: 1em;
-margin-bottom: 2em;
 padding-left: 0px;
 padding-right: 0px;
-background-color: #c42f43;
 color: #fff
 }
-
-.nav-title h1 {
+.nav-title {
+    padding: 1em;
+    width: 100%;
+background-color: #c42f43;
+}
+.nav-title h2 {
     font-family: Chalkduster, fantasy 
 }
 
@@ -33,14 +34,17 @@ color: #fff
     margin-right: 0px;
 }
 .navbar-jump ul {
-    border-top: 0.5em solid #fff;
+    margin: 0em;
+    border-top: 0.5em solid #871e2c;
 /*    background-image: linear-gradient(to bottom, #fff, #c42f43 60%);*/
-    border-color: #871e2c;
+    background-color: #871e2c;
     width: 100%;
     display: flex;
     flex-direction: row;
-    list-style-type: none
+    align-items: center;
+    list-style-type: none;
 }
+
 
 @media (prefers-reduced-motion: no-preference) {
 .title-img {
