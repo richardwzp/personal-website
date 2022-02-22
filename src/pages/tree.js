@@ -1,7 +1,11 @@
-import React from 'react'
+import React from 'react';
+import Meteor from './meteor';
 function Tree() {
-    return (<div className="Tree">  
-	</ div>)
+    return (
+	<Meteor>
+	<div className="Tree">  
+	</ div>
+	</Meteor>)
 }
 
 export default Tree;

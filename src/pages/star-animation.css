@@ -19,7 +19,7 @@
 }
 
 .star {
-  --star-color: #ff66e3;
+  --star-color: #fff;
   --star-tail-length: 6em;
   --star-tail-height: 2px;
   --star-width: calc(var(--star-tail-length) / 6);
@@ -192,6 +192,7 @@
   --fall-duration: 7.742s;
   --fall-delay: 2.933s;
 }
+/*
 .star:nth-child(26) {
   --star-tail-length: 6.12em;
   --top-offset: 32.5vh;
@@ -227,7 +228,7 @@
   --top-offset: 69.78vh;
   --fall-duration: 10.253s;
   --fall-delay: 9.775s;
-}
+} 
 .star:nth-child(32) {
   --star-tail-length: 7.01em;
   --top-offset: 96.26vh;
@@ -342,6 +343,7 @@
   --fall-duration: 8.606s;
   --fall-delay: 7.278s;
 }
+*/
 .star::before, .star::after {
   position: relative;
   content: "";

@@ -1,12 +1,12 @@
 import React from 'react';
-import './blueprint.css';
+import './meteor.css';
 import './star-animation.css';
 // https://www.sliderrevolution.com/resources/css-animated-background/
 // https://codepen.io/alphardex/pen/RwrVoeL
 /**
  * create a blueprint background for all pages, with animation
  * */
-class BluePrint extends React.Component {
+class Meteor extends React.Component {
 
 render() {
 
@@ -15,7 +15,7 @@ render() {
 	<div class="default-background">
 	    {this.props.children}
 	    <div class="stars"> 
-		{Array.from(Array(50)).map(
+		{Array.from(Array(25)).map(
 		    _ => (<div class="star"> </div>))} 
 	    </div>
 	</ div>
@@ -24,4 +24,4 @@ render() {
 }
 
 
-export default BluePrint;
+export default Meteor;
