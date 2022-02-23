@@ -24,6 +24,9 @@
     flex-direction: column;
     
 }
+
+
+
 /*https://css-tricks.com/snippets/css/simple-and-nice-blockquote-styling/*/ 
 .home-title-container:before {
   color: #ccc;
@@ -49,9 +52,11 @@
     flex-direction: row;
 }
 
+.home-bio {
+    max-width: 14em;
+}
 
 .home-bio-spinning-container {
-    width: 45%
 }
 
 .home-bio-image {
@@ -66,7 +71,12 @@
     flex-direction: row;
     justify-content: flex-start;
 }
-
+@media screen and (max-width: 720px) {
+    .home-horizontal-container {
+	display: flex;
+	flex-direction: column
+    }
+}
 
 .insta-container {
     margin-left: 1.3em;
@@ -89,7 +99,6 @@
 
 
 .home-fast-spinner-container {
-
     align-self: start;
 }
 .home-fast-link-container h3 {
