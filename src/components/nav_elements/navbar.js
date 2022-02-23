@@ -13,8 +13,8 @@ function Navbar() {
 		<div className="navbar-jump"> 
 		 <ul>
 		   <Tab destination_link="/" destination_name="home" />
-		   <Tab destination_link="/tree" destination_name="tree" />
-		   <NavLink className="nav-link" to="/tree" />			     </ul> 
+		   <Tab destination_link="/meteor" destination_name="meteor" />
+			     </ul> 
 	</div>
 	</div>)
     

@@ -25,7 +25,8 @@ background-color: #333333;
 }
 
 .title-img {
-    width: 5em
+    width: 3.6em;
+    margin-right: 1em;
 }
 
 .navbar-jump {
@@ -45,13 +46,13 @@ background-color: #333333;
     list-style-type: none;
 }
 
-
+/*
 @media (prefers-reduced-motion: no-preference) {
 .title-img {
     animation: logo-spin infinite 20s linear;
     }
 }
-
+*/
 @keyframes logo-spin {
     from {
 	transform: rotate(0deg);

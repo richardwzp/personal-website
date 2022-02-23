@@ -1,29 +1,48 @@
 
 .home-container {
     display: flex;
+    width: 100%;
     flex-direction: column;
     justify-content: flex-start;
     background-color: #1e1f24;
-    height: 50em;
+    height: 100%;
     color: #fff;
 }
-.home-title {
+.home-title-container {
     padding: 2em;
     color: #fff;
     font-family: Luminari, fantasy;
-    text-align: center;
+
+    border-left: 10px solid #ccc;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+
+    margin-left: 10em;
+    margin-right: 10em;
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
     
 }
- 
-
-
-.home-horizontal-container {
-    display: flex;
-    overflow: hidden;
-    flex-direction: row;
-    background-color: #1e1f24;
+/*https://css-tricks.com/snippets/css/simple-and-nice-blockquote-styling/*/ 
+.home-title-container:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+.home-title-container h3 {
+  display: inline;
+  line-height: 1.6em;
+  text-size-adjust: 90%;
 }
 
+.home-quote-author {
+    margin-top: 1em;
+    margin-left: 1em;
+}
 
 .home-bio-container {
     display: flex;
@@ -32,7 +51,7 @@
 
 
 .home-bio-spinning-container {
-    width: 50%
+    width: 45%
 }
 
 .home-bio-image {
@@ -49,14 +68,33 @@
 }
 
 
+.insta-container {
+    margin-left: 1.3em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.insta-container img {
+    height: 1em;
+    text-align: center;
+    margin-right: 0.4em;
+}
+
 .home-fast-link-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    width: 100%;
 }
 
+
+.home-fast-spinner-container {
+
+    align-self: start;
+}
 .home-fast-link-container h3 {
     margin-bottom: 1em;
+    font-family: Luminari, fantasy;
 }
 
 

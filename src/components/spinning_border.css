@@ -84,4 +84,7 @@ grid-row-start: 1;
     background-color: #1e1f24;
     border-radius: 1.8em;
     padding: 1.7em; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

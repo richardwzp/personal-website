@@ -192,7 +192,7 @@
   --fall-duration: 7.742s;
   --fall-delay: 2.933s;
 }
-/*
+
 .star:nth-child(26) {
   --star-tail-length: 6.12em;
   --top-offset: 32.5vh;
@@ -343,7 +343,7 @@
   --fall-duration: 8.606s;
   --fall-delay: 7.278s;
 }
-*/
+
 .star::before, .star::after {
   position: relative;
   content: "";

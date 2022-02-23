@@ -1,6 +1,7 @@
 import React from 'react';
 import './home.css';
 import SpinningBorder from '../components/spinning_border';
+import LinkedWidget from '../components/link_widget';
 
 const bio_block = (
     <div className="home-bio-spinning-container">
@@ -15,42 +16,64 @@ const bio_block = (
 	</SpinningBorder>
     </div>);
 
-function generateLink(name, link_name, link) {
-    return (
-    <div>
-    <span className="font-weight-bold">{name}:</span> 
-	    <a className="text-decoration-none" href={link}> {link_name}</a>
-    </div>
-    );
-}
 
+
+
+const discord_link =(<a href="https://discord.com"> Morpheus#0001</a>);
+const email_link = (<span> wzprichardwzp 。gmail</span>)
+const insta_link = (<a href="https://instagram.com"> rich.d_d</a>);
+const github_link = (<a href="https://github.com/richardwzp"> richardwzp</a>);
 const fast_link = (
+    <div className="home-fast-spinner-container">
     <SpinningBorder> 
 	<div className="home-fast-link-container">
-	    <h3> socials that Im willing to share: </ h3>
+	    <h3> quick links about me: </ h3>
 	      <ul>
-		<li>
-		    {generateLink("discord", "Morpheus#0001", "https://discord.com")}
-		</li>
-		<li> 	
-		    {generateLink("email", "wang.zipeng 。dot 。northeastern.edu", "404")}
+		<LinkedWidget imgSrc="/discord_icon.png"
+			      widetName="discord"
+			      linkedItem={discord_link}/> 
 
-		</li>
+		<LinkedWidget imgSrc="/gmail_icon.png"
+			      widetName="email"
+			      linkedItem={email_link}/> 
+
+		<LinkedWidget imgSrc="/insta_icon.png"
+			      widetName="insta"
+			      linkedItem={insta_link}/>
+		<LinkedWidget imgSrc="/github_icon.png"
+			      widetName="github"
+			      linkedItem={github_link}/>
 	      </ul>
 	</div>
     </SpinningBorder>
+    </div>
 );
 
+const third_block = (
+    <SpinningBorder>  
+	<h4> Still under construction ~ </h4>
+
+    </ SpinningBorder>
+);
+
+
+const quote_element = (<div className="home-title-container">
+          <h3 className="home-quote-body">It may be desirable to explain, that by the word operation, we mean any process which alters the mutual relation of two or more things, be this relation of what kind it may. This is the most general definition and would include all subjects in the universe.”</h3>
+	  <h2 className="home-quote-author"> --    Ada LoveLace </h2>
+	</div>
+);
 function Home() {
     return (
 <div className="home-container">
-          <h3 className="home-title">Hi! this is my personal website, where I put all my wonderous thoughts, ~_~ </h3>
-	  <div className="home-horizontal-container">	
+    <div className="home-horizontal-container">	
 	    {bio_block}
 	    {fast_link}
-
 	  </div>
-            </div>
+    {quote_element}
+    <div className="home-horizontal-container">
+	      {third_block}
+    </div>
+</div>
 
     );
 }
