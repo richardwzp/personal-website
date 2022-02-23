@@ -1,0 +1,24 @@
+
+.linked-widget-wrapper {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.linked-widget-text-container {
+}
+
+.widget-image-icon {
+    width: 1em;
+    margin-right: 0.2em;
+    margin-right: auto;
+}
+.linked-widget-left-side-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 3em;
+    min-width: 30%;
+}
+
