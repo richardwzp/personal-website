@@ -1,6 +1,5 @@
 # Richard's Personal Website
-https://ashy-pebble-09c2dd00f.1.azurestaticapps.net/
-(it's a bit long, but it will do for now)
+https://www.richardwzp.com <br />
 A simple static site made with react and plain css.
 
 This mainly serve as a playground for me to mess around,
