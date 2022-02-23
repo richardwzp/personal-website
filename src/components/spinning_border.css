@@ -1,4 +1,6 @@
 .spinning-border-outside-container {
+    /* apparently safari refuse to fix it */
+    mask-image: radial-gradient(white, black);
     margin: 2em;
     padding: 2em;
     display: grid;
