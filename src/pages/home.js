@@ -54,14 +54,19 @@ const fast_link = (
 
 const third_block = (
     <div>  
-	<h4> personal projects:</h4>
+	<h4 style={{marginLeft: "10px"}}> personal projects:</h4>
 	<GithubProj/>
     </ div>
 );
 let QuoteComp = () => {
 //const quote_match = useMediaQuery('(max-width:600px)'); 
 const quote_body = (<h3 className="home-quote-body" style={{fontSize: "2vw"}}>It may be desirable to explain, that by the word operation, we mean any process which alters the mutual relation of two or more things, be this relation of what kind it may. This is the most general definition and would include all subjects in the universe.”</h3>);
-return (<div className="home-title-container">
+return (<div className="home-title-container" 
+    style={{fontSize: "2vw",
+	    borderLeft: "0.8vw solid #ccc",
+	    marginLeft: "8vw",
+	    marginRight: "8vw",
+}}>
     {quote_body}
           	  <h2 className="home-quote-author" style={{fontSize: "3vw"}}> --    Ada LoveLace </h2>
 	</div>
