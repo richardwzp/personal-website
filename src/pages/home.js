@@ -2,6 +2,9 @@ import React from 'react';
 import './home.css';
 import SpinningBorder from '../components/spinning_border';
 import LinkedWidget from '../components/link_widget';
+import GithubProj from '../components/github_proj';
+import useMediaQuery from '@material-ui/core/useMediaQuery';
+
 
 const bio_block = (
     <div className="home-bio-spinning-container">
@@ -50,18 +53,20 @@ const fast_link = (
 );
 
 const third_block = (
-    <SpinningBorder>  
-	<h4> Still under construction ~ </h4>
-
-    </ SpinningBorder>
+    <div>  
+	<h4> personal projects:</h4>
+	<GithubProj/>
+    </ div>
 );
-
-
-const quote_element = (<div className="home-title-container">
-          <h3 className="home-quote-body">It may be desirable to explain, that by the word operation, we mean any process which alters the mutual relation of two or more things, be this relation of what kind it may. This is the most general definition and would include all subjects in the universe.”</h3>
-	  <h2 className="home-quote-author"> --    Ada LoveLace </h2>
+let QuoteComp = () => {
+//const quote_match = useMediaQuery('(max-width:600px)'); 
+const quote_body = (<h3 className="home-quote-body" style={{fontSize: "2vw"}}>It may be desirable to explain, that by the word operation, we mean any process which alters the mutual relation of two or more things, be this relation of what kind it may. This is the most general definition and would include all subjects in the universe.”</h3>);
+return (<div className="home-title-container">
+    {quote_body}
+          	  <h2 className="home-quote-author" style={{fontSize: "3vw"}}> --    Ada LoveLace </h2>
 	</div>
 );
+}
 function Home() {
     return (
 <div className="home-container">
@@ -69,9 +74,10 @@ function Home() {
 	    {bio_block}
 	    {fast_link}
 	  </div>
-    {quote_element}
+
+    {third_block}
+    <QuoteComp/>
     <div className="home-horizontal-container">
-	      {third_block}
     </div>
 </div>
 
