@@ -1,4 +1,6 @@
 # Richard's Personal Website
+**this link might redirect to a different version of my personal website.
+checkout repo richardwzp/carbonado**
 https://www.richardwzp.com <br />
 A simple static site made with react and plain css.
 
